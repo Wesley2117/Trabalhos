@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+a {
+    
+     
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+
+
+
+
+}
+
+h1 {
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+

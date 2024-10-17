@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somente para a Nicolly</title>
+</head>
+<body>
+    <hr>
+    <h1>Para o amor da minha vida, a mulher que amo e quero me casar!!</h1>
+    <hr>
+
+     <p>Eu amo voçe minha garota linda, inteligente e cheirosa!</p>
+     <p>Voçe é uma garota muito especial para mim, te amo mesmo voce sendo muito chataaa rsss, é brincadeira cabeça.</p>
+     <p>Eu amo voçe Nicolly, muito muito muito, está lendo isso né??</p>
+     <p>Eu amo a Nicolly❤️❤️❤️❤️❤️❤️❤️</p>
+
+    <!-- Primeiro botão para a primeira interação -->
+    <button onclick="primeiraPergunta()">Clique aqui para responder uma pergunta importante!!</button>
+    <br>
+    <br>
+    <!-- Segundo botão para a segunda interação -->
+    <button onclick="segundaPergunta()">Clique aqui de novo pra responder a pergunta mais importante da vida dele!!</button>
+
+    <script>
+        // Função para a primeira interação
+        function primeiraPergunta() {
+            let resposta1 = prompt("Você sabia que o Wesley sonha em se casar com voçe nicolly? (Responda Sim ou Não)");
+
+            if (resposta1.toLowerCase() === "sim") {
+                alert("Que bom que voçe sabia né cabeça de melancia, ele espera que voce se case com ele.");
+            } else if (resposta1.toLowerCase() === "não") {
+                alert("Entendi, então agora voçe está sabendo né!");
+            } else {
+                alert("Por favor cabeça, responda apenas com 'Sim' ou 'Não' eu estou iniciando.");
+            }
+        }
+    
+
+        // Função para a segunda interação
+        function segundaPergunta() {
+            let resposta2 = prompt("Nicolly, Voçe quer se casar com o Wesley? (Responda Sim ou Não)");
+
+            if (resposta2.toLowerCase() === "sim") {
+                alert("Q bommm cabeça, estou muito feliz, agora voçe vai cumprir sua palavra e se casar com ele 🥰🥰🥰:).");
+            } else if (resposta2.toLowerCase() === "não") {
+                alert("Entendi, então vai se casar com o Lorenzo🙄🙄, menina chata🙄🙄🙄!");
+            } else {
+                alert("Por favor cabeça, responda apenas com 'Sim' no caso de 'não' não vou aguentar, não estou brincando");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Troquei o idioma para Português Brasileiro, ajuste conforme necessário -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2>O que o JavaScript Pode Fazer?</h2>
+        <p id="demo">JavaScript pode alterar o conteúdo HTML.</p>
+        <button type="button"
+        onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>
+        Clique em Mim!</button>
+    </div>
+
+    <div class="container">
+        <script>
+            alert("Bem vindo ao mundo JavaScript!")
+            console.log("Meu primeiro programa...")
+        </script>
+    </div>
+
+    <div>
+        <script>
+            const nome = prompt("Qual é o seu nome?")
+            alert("Olá " + nome) <!-- Adicionei um espaço entre Olá e o nome -->
+        </script>
+    </div>
+
+    <div>
+        <script>
+            const a = "20"
+            const b = a * 2   // b = 40
+            const c = b / 2   // c = 10
+            const d = a - 2   // d = 18
+            const e = a + 2   // e = 202 ???
+            alert("e: " + e)  // exibe o valor de uma variavel
+        </script>
+    </div>
+
+    
+    <h2>Mensagens em Blocos</h2>
+    <div class="container" id="message-container">
+        <!-- As mensagens aparecerão aqui -->
+    </div>
+
+    <button onclick="addMessage()">Adicionar Mensagem</button>
+
+    <script>
+        function addMessage() {
+            const container = document.getElementById('message-container');
+            
+            // Cria um novo bloco de mensagem
+            const messageBlock = document.createElement('div');
+            messageBlock.classList.add('message-block');
+            
+            // Define o conteúdo do bloco
+            const nome = prompt("Qual é o seu nome?");
+            const messageContent = document.createTextNode(`Olá ${nome}, seja bem-vindo!`);
+            
+            // Adiciona o conteúdo ao bloco de mensagem
+            messageBlock.appendChild(messageContent);
+            
+            // Adiciona o bloco de mensagem ao container
+            container.appendChild(messageBlock);
+        }
+    </script>
+
+    <div>
+        <script>
+            const fruta = "banana"
+            const preco = 3.50
+            const levar = true
+            let novoValor
+            console.log(typeof fruta)
+            console.log(typeof preco)
+            console.log(typeof levar)
+            console.log(typeof novoValor)
+        </script>
+    </div>
+    
+</body>
+</html>
